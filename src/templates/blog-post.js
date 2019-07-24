@@ -5,48 +5,28 @@
 import React, { Component } from 'react';
 import { graphql } from 'gatsby';
 
-import 'gitalk/dist/gitalk.css';
-
-import { parseChineseDate } from '../api';
-
-import ExternalLink from '../components/ExternalLink';
 import Sidebar from '../components/Sidebar';
 import Content from '../components/Content';
 import SEO from '../components/SEO';
+
+import DisqusThread from '../components/DisqusThread';
 
 import Header from '../components/Header';
 // import TableOfContent from '../components/TableOfContent';
 import ShareBox from '../components/ShareBox';
 
 import { config } from '../../data';
+import { parseDate } from '../api';
 
 // Styles
 import './blog-post.scss';
 
-const { name, iconUrl, gitalk } = config;
-
-const bgWhite = { padding: '10px 30px', background: 'white' };
-
-// Prevent webpack window problem
-const isBrowser = typeof window !== 'undefined';
-const Gitalk = isBrowser ? require('gitalk') : undefined;
+const { name, iconUrl } = config;
 
 class BlogPost extends Component {
   constructor(props) {
     super(props);
     this.data = this.props.data;
-  }
-
-  componentDidMount() {
-    const { frontmatter, id: graphqlId } = this.data.content.edges[0].node;
-    const { title, id } = frontmatter;
-
-    const GitTalkInstance = new Gitalk({
-      ...gitalk,
-      title,
-      id: id || graphqlId,
-    });
-    GitTalkInstance.render('gitalk-container');
   }
 
   render() {
@@ -67,26 +47,14 @@ class BlogPost extends Component {
           title={title}
           authorName={name}
           authorImage={iconUrl}
-          subTitle={parseChineseDate(date)}
+          subTitle={parseDate(date)}
         />
         <Sidebar />
         <div className="col-xl-7 col-lg-6 col-md-12 col-sm-12 order-10 content">
           <Content post={html} />
-          <div className="m-message" style={bgWhite}>
-            如果你覺得我的文章對你有幫助的話，希望可以推薦和交流一下。歡迎
-            <ExternalLink
-              href="https://github.com/calpa/gatsby-starter-calpa-blog"
-              title="關注和 Star 本博客"
-            />
-            或者
-            <ExternalLink
-              href="https://github.com/calpa/"
-              title="關注我的 Github"
-            />
-            。
+          <div id="gitalk-container">
+            <DisqusThread id={slug} path={slug} title={title} />
           </div>
-
-          <div id="gitalk-container" />
         </div>
 
         <ShareBox url={slug} />
@@ -94,10 +62,33 @@ class BlogPost extends Component {
         <SEO
           title={title}
           url={slug}
-          siteTitleAlt="Calpa's Blog"
+          siteTitleAlt="Corinna's Blog"
           isPost={false}
           description={excerpt}
           image={headerImage || 'https://i.imgur.com/M795H8A.jpg'}
+        />
+
+        <div id="disqus_thread" />
+        <script dangerouslySetInnerHTML={{
+          __html: `</script>
+          var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://corninna.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        <script>`,
+        }}
+        />
+        <noscript dangerouslySetInnerHTML={{
+          __html: `</noscript>
+          Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        <noscript>`,
+        }}
         />
       </div>
     );
@@ -110,7 +101,6 @@ export const pageQuery = graphql`
       slug
     }
     frontmatter {
-      id
       title
       slug
       date

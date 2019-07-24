@@ -20,11 +20,9 @@ module.exports = ({ actions, graphql }) => {
               tags
               templateKey
               slug
-              id
               title
               url: slug
               date
-              tags
               description
               headerImage
             }

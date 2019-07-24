@@ -12,19 +12,10 @@
   "email": "cy986@nyu.edu",
   "stats": {
     "image": "https://i.imgur.com/VjBWiSt.png",
-    "title": "過去三十日數據",
-    "description": "過去三十日數據"
+    "title": "Corinna",
+    "description": "that is me"
   },
   "title": "cor's things",
-  "gitalk": {
-    "repo": "calpa.github.io",
-    "admin": ["calpa"],
-    "owner": "calpa",
-    "clientID": "18255f031b5e11edd98a",
-    "clientSecret": "2ff6331da9e53f9a91bcc991d38d550c85026714",
-    "pagerDirection": "first",
-    "distractionFreeMode": true
-  },
   "License": "by",
   "friends": [
     {

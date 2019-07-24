@@ -27,6 +27,7 @@ const TagPage = ({ data, pageContext }) => {
             }}
           >
             {edges.length}
+
             &nbsp;Articles in&nbsp;
             {tag}
           </div>
@@ -41,7 +42,7 @@ const TagPage = ({ data, pageContext }) => {
       <SEO
         title={tag}
         url={`/tag/${tag}`}
-        siteTitleAlt="Calpa's Blog"
+        siteTitleAlt="Corinna's Blog"
         isPost={false}
         description={tag}
         image="https://i.imgur.com/M795H8A.jpg"
@@ -62,7 +63,6 @@ export const pageQuery = graphql`
         node {
           id
           frontmatter {
-            id
             url: slug
             title
             date

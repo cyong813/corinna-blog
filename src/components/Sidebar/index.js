@@ -72,7 +72,6 @@ export default () => (
           slug
         }
         frontmatter {
-          id
           title
           url: slug
           date

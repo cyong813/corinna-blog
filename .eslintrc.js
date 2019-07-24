@@ -31,6 +31,7 @@ const eslintrc = {
   env: {
     browser: true,
   },
+  parser: "babel-eslint",
 };
 
 module.exports = eslintrc;
