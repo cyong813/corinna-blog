@@ -1,14 +1,14 @@
 {
-  "License": "by",
+  "License": "",
   "meta": {
-    "favicon": "https://i.imgur.com/PO9Y4fT.jpg",
+    "favicon": "https://raw.githubusercontent.com/cyong813/corinna-blog/master/static/assets/coffee-pixel-128x128.png",
     "keyword": "corinna, blog, JavaScript",
     "description": "corinna, blog, JavaScript",
     "theme_color": "#384f7c",
     "google_site_verification": "riZBcestky7i9xY__A-5J-2EE65T75X1u-zgbss37Io"
   },
   "name": "corinna",
-  "gaTrackId": "UA-84737574-3",
+  "gaTrackId": "",
   "about": "/about-corinna/",
   "navbarList": [
     {
@@ -20,8 +20,8 @@
       "href": "/about-corinna/"
     }
   ],
-  "url": "https://calpa.me",
-  "gaOptimizeId": "GTM-WHP7SC5",
+  "url": "https://sad-elion-202e0c.netlify.com",
+  "gaOptimizeId": "",
   "redirectors": [
     {
       "fromPath": "/about/",
@@ -31,10 +31,10 @@
   "friends": [
     {
       "title": "Portfolio/Website",
-      "href": "cyong813.github.io/aboutme/"
+      "href": "https://cyong813.github.io/aboutme/"
     }
   ],
-  "iconUrl": "https://i.imgur.com/kjt2x52.jpg",
+  "iconUrl": "https://raw.githubusercontent.com/cyong813/corinna-blog/master/static/assets/corinna.jpg",
   "title": "cor's things",
   "email": "cy986@nyu.edu",
   "zhihuUsername": ""
