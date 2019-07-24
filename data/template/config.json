@@ -1,54 +1,41 @@
 {
-  "url": "https://sad-elion-202e0c.netlify.com",
+  "License": "by",
   "meta": {
-    "favicon": "https://raw.githubusercontent.com/cyong813/corinna-blog/master/static/assets/coffee-pixel-128x128.png",
+    "favicon": "https://i.imgur.com/PO9Y4fT.jpg",
     "keyword": "corinna, blog, JavaScript",
-    "description": "personal, tech, writing",
+    "description": "corinna, blog, JavaScript",
     "theme_color": "#384f7c",
     "google_site_verification": "riZBcestky7i9xY__A-5J-2EE65T75X1u-zgbss37Io"
   },
   "name": "corinna",
-  "about": "/about-corinna/",
-  "email": "cy986@nyu.edu",
-  "stats": {
-    "image": "https://i.imgur.com/VjBWiSt.png",
-    "title": "Corinna",
-    "description": "that is me"
-  },
-  "title": "cor's things",
-  "License": "by",
-  "friends": [
-    {
-      "href": "cyong813.github.io/aboutme/",
-      "title": "Portfolio/Website"
-    }
-  ],
-  "iconUrl": "https://raw.githubusercontent.com/cyong813/corinna-blog/master/static/assets/coffee-pixel-128x128.png",
-  "wordings": ["JS, Python", "Alumni of NYU 2019"],
   "gaTrackId": "UA-84737574-3",
+  "about": "/about-corinna/",
   "navbarList": [
     {
-      "href": "/tags/",
-      "title": "Tags"
+      "title": "Tags",
+      "href": "/tags/"
     },
     {
-      "href": "/about-corinna/",
-      "title": "About"
+      "title": "About",
+      "href": "/about-corinna/"
     }
   ],
+  "url": "https://calpa.me",
+  "gaOptimizeId": "GTM-WHP7SC5",
   "redirectors": [
     {
-      "toPath": "/about-corinna/",
-      "fromPath": "/about/"
+      "fromPath": "/about/",
+      "toPath": "/about-corinna/"
     }
   ],
-  "gaOptimizeId": "GTM-WHP7SC5",
-  "carouselItems": [
+  "friends": [
     {
-      "src": "https://i.imgur.com/gw91CuI.jpg",
-      "target": "/stats/"
+      "title": "Portfolio/Website",
+      "href": "cyong813.github.io/aboutme/"
     }
   ],
-  "githubUsername": "cyong813",
-  "maxPostsInPage": 10
+  "iconUrl": "https://i.imgur.com/kjt2x52.jpg",
+  "title": "cor's things",
+  "email": "cy986@nyu.edu",
+  "zhihuUsername": ""
 }
