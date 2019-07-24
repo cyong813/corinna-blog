@@ -2,20 +2,20 @@
   "url": "https://calpa.me",
   "meta": {
     "favicon": "https://i.imgur.com/PO9Y4fT.jpg",
-    "keyword": "calpa, blog, JavaScript",
-    "description": "Calpa 的技術博客，開發日常，以及遇到的坑",
+    "keyword": "corinna, blog, JavaScript",
+    "description": "personal, tech, writing",
     "theme_color": "#384f7c",
     "google_site_verification": "riZBcestky7i9xY__A-5J-2EE65T75X1u-zgbss37Io"
   },
-  "name": "calpa",
-  "about": "/2018/05/01/about-calpa-liu/",
-  "email": "calpaliu@gmail.com",
+  "name": "corinna",
+  "about": "/about-corinna/",
+  "email": "cy986@nyu.edu",
   "stats": {
     "image": "https://i.imgur.com/VjBWiSt.png",
     "title": "過去三十日數據",
     "description": "過去三十日數據"
   },
-  "title": "Calpa 的技術博客",
+  "title": "cor's things",
   "gitalk": {
     "repo": "calpa.github.io",
     "admin": ["calpa"],
@@ -28,30 +28,26 @@
   "License": "by",
   "friends": [
     {
-      "href": "https://calpa.me",
-      "title": "Calpa's Blog"
+      "href": "cyong813.github.io/aboutme/",
+      "title": "Portfolio/Website"
     }
   ],
   "iconUrl": "https://i.imgur.com/kjt2x52.jpg",
-  "wordings": ["GatsbyJS, ReactJS", "全週期開發者"],
+  "wordings": ["JS, Python", "Alumni of NYU 2019"],
   "gaTrackId": "UA-84737574-3",
   "navbarList": [
-    {
-      "href": "/guestbook/",
-      "title": "留言簿"
-    },
     {
       "href": "/tags/",
       "title": "Tags"
     },
     {
-      "href": "/2018/05/01/about-calpa-liu/",
-      "title": "關於作者"
+      "href": "/about-corinna/",
+      "title": "About"
     }
   ],
   "redirectors": [
     {
-      "toPath": "/2018/05/01/about-calpa-liu/",
+      "toPath": "/about-corinna/",
       "fromPath": "/about/"
     }
   ],
@@ -62,8 +58,6 @@
       "target": "/stats/"
     }
   ],
-  "zhihuUsername": "piao-xue-wu-ying",
-  "githubUsername": "calpa",
-  "maxPostsInPage": 10,
-  "facebook": "calpablog"
+  "githubUsername": "cyong813",
+  "maxPostsInPage": 10
 }

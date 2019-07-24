@@ -1,7 +1,5 @@
 import React from 'react';
-
 import PropTypes from 'prop-types';
-
 import Friend from '../Friend';
 import LatestPost from '../LatestPost';
 import './index.scss';
@@ -11,9 +9,9 @@ const Information = ({ totalCount, posts }) => (
   <div className="d-none d-lg-block information my-2">
     <hr />
     <p>
-      共&nbsp;
       {totalCount}
-      &nbsp;篇文章
+
+      &nbsp;posts
     </p>
     <hr />
     <LatestPost posts={posts} />
