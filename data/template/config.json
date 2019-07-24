@@ -1,7 +1,7 @@
 {
   "url": "https://calpa.me",
   "meta": {
-    "favicon": "https://i.imgur.com/PO9Y4fT.jpg",
+    "favicon": "https://raw.githubusercontent.com/cyong813/corinna-blog/master/static/assets/coffee-pixel-128x128.png",
     "keyword": "corinna, blog, JavaScript",
     "description": "personal, tech, writing",
     "theme_color": "#384f7c",
@@ -23,7 +23,7 @@
       "title": "Portfolio/Website"
     }
   ],
-  "iconUrl": "https://i.imgur.com/kjt2x52.jpg",
+  "iconUrl": "https://raw.githubusercontent.com/cyong813/corinna-blog/master/static/assets/coffee-pixel-128x128.png",
   "wordings": ["JS, Python", "Alumni of NYU 2019"],
   "gaTrackId": "UA-84737574-3",
   "navbarList": [
