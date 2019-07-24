@@ -2,8 +2,8 @@ module.exports = {
   pathPrefix: '/',
   siteMetadata: {
     title: 'Corinna&apos;s Blog',
-    description: 'An Everything Blog',
-    siteUrl: 'https://calpa.me',
+    description: 'My Everything Blog',
+    siteUrl: 'https://sad-elion-202e0c.netlify.com',
     author: 'Corinna',
   },
   plugins: [

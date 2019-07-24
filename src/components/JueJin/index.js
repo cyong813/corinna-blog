@@ -1,3 +1,4 @@
+// Android support. Must research into further.
 import React from 'react';
 import PropTypes from 'prop-types';
 

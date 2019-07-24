@@ -14,7 +14,7 @@ const CommentButton = () => (
       color: '#337ab7',
       paddingLeft: '0.15rem',
     }}
-    href="#gitalk-container"
+    href="#disqus-container"
     onClick={() => ReactGA.event({
       category: 'User',
       action: 'Goto Comment Box',

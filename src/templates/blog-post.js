@@ -21,7 +21,8 @@ import { parseDate } from '../api';
 // Styles
 import './blog-post.scss';
 
-const { name, iconUrl } = config;
+const { name } = config;
+const imgurAuthorIconUrl = 'https://i.imgur.com/VQEsGHz.jpg';
 
 class BlogPost extends Component {
   constructor(props) {
@@ -46,13 +47,13 @@ class BlogPost extends Component {
           img={headerImage || 'https://i.imgur.com/M795H8A.jpg'}
           title={title}
           authorName={name}
-          authorImage={iconUrl}
+          authorImage={imgurAuthorIconUrl}
           subTitle={parseDate(date)}
         />
         <Sidebar />
         <div className="col-xl-7 col-lg-6 col-md-12 col-sm-12 order-10 content">
           <Content post={html} />
-          <div id="gitalk-container">
+          <div id="disqus-container">
             <DisqusThread id={slug} path={slug} title={title} />
           </div>
         </div>
